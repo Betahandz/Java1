@@ -45,7 +45,7 @@ class Questions {
         for(int x = 0; x < arr.length; x++){
             total += arr[x];
         }
-        System.out.println(total);
+        System.out.println("total is " + total);
     };
 
     static void ans7() {
@@ -76,13 +76,8 @@ class Questions {
 
     static void ans10() {
         // kilometers to miles
-        double oneMile = 1.6; // mile to killometers
-        double distance = 14; // distance in kilometers
-        double minutes = 45;
-        double seconds = 30;
-        // change the minutes to seconds and add all seconds
+        double oneMile = 1.6, distance = 14, minutes = 45, seconds = 30;
         seconds += minutes * 60;
-        // we change to hours
         double hr = seconds / (60 * 60);
         // formular for average speed is distacne divided by time
         double Speed = (distance / oneMile) / hr;
